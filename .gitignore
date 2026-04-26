@@ -1,0 +1,20 @@
+# Kedro
+conf/local/
+
+# Environnement virtuel
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Data (optionnel, si tu ne veux pas versionner les données)
+data/
+
+# Logs
+logs/
+
+# Jupyter / Marimo
+.ipynb_checkpoints/
