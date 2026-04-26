@@ -1,4 +1,4 @@
 test_ratio: 0.3
 automl_max_evals: 10
-gcp_project_id: "esgi-352608"
+gcp_project_id: "purchase-predict-490611"
 gcs_primary_folder: "purchase_predict_bucket_1/primary"
