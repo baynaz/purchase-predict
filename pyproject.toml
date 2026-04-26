@@ -16,6 +16,7 @@ dependencies = [
     "joblib>=1.0",
     "scikit-learn>=1.0",
     "lightgbm>=3.0",
+    "hyperopt>=0.2.7",
     "google-cloud-storage>=2.0"
 ]
 
