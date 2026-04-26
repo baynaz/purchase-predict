@@ -4,7 +4,7 @@ steps:
     entrypoint: /bin/sh
     args:
       - "-c"
-      - "chmod a+x install.sh && ./install.sh && uv sync --extra dev && uv run pytest ."
+      - "chmod a+x install.sh && ./install.sh && uv sync --extra dev && uv pip install setuptools && uv run pytest ."
     env:
       - "UV_CACHE_DIR=/root/.cache/uv"
 
@@ -13,7 +13,7 @@ steps:
     entrypoint: /bin/bash
     args:
       - "-c"
-      - "chmod a+x install.sh && ./install.sh && uv run kedro run --pipeline loading && uv run kedro run"
+      - "chmod a+x install.sh && ./install.sh && uv sync && uv pip install setuptools && uv run kedro run"
     env:
       - "ENV=$BRANCH_NAME"
       - "MLFLOW_SERVER=$_MLFLOW_SERVER"
