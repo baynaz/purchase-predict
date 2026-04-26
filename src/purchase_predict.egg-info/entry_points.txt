@@ -1,0 +1,2 @@
+[console_scripts]
+purchase-predict = purchase_predict.__main__:main
