@@ -13,7 +13,7 @@ steps:
     entrypoint: /bin/bash
     args:
       - "-c"
-      - "chmod a+x install.sh && ./install.sh && uv run kedro run"
+      - "chmod a+x install.sh && ./install.sh && uv run kedro run --pipeline loading && uv run kedro run"
     env:
       - "ENV=$BRANCH_NAME"
       - "MLFLOW_SERVER=$_MLFLOW_SERVER"
